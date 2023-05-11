@@ -1,0 +1,65 @@
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (min-width: 600px) {
+	.step {
+		width: 400px;
+		height: 70px;
+		border-radius: 3px;
+		border: 2px solid rgb(224, 224, 224);
+		display: flex;
+		align-items: center;
+		justify-content: left;
+		padding: 3px 10px;
+		background-color: rgb(250, 250, 250);
+		transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out,
+			color 0.3s ease-in-out;
+	}
+	.step-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.connector {
+		width: 100px;
+		height: 2px;
+		background-color: rgb(224, 224, 224);
+	}
+
+	.text-container {
+		display: flex;
+		flex-direction: column;
+	}
+	.fa {
+		color: rgb(138, 138, 138);
+		font-size: 30px;
+		margin: 10px;
+		transition: color 0.3s ease-in-out;
+	}
+
+	.title {
+		font-weight: 600;
+		color: rgb(61, 61, 61);
+		transition: color 0.3s ease-in-out;
+	}
+	.info {
+		font-weight: light;
+		color: rgb(61, 61, 61);
+	}
+	.step:hover {
+		background-color: white;
+		border: 2px solid rgb(151, 176, 231);
+	}
+
+	.fa:hover {
+		color: rgb(151, 176, 231) !important;
+	}
+
+	.progress-bar {
+		height: 2px;
+		background: rgb(82, 132, 242);
+
+		width: 0%;
+	}
+}
